@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+    database_brainny:
+        image: postgres
+        container_name: database_brainny
+        restart: always
+        ports:
+            - 5432:5432
+        environment:
+            - POSTGRES_USER=lucasoliveira
+            - POSTGRES_PASSWORD=brainny123
+            - POSTGRES_DB=nest_api
+        volumes:
+            - pgdata:/data/postgres
+
+
+volumes:
+    pgdata:
+        driver: local
