@@ -18,6 +18,7 @@ describe('UserService', () => {
     save: jest.fn(),
     update: jest.fn(),
     delete: jest.fn(),
+    findOne: jest.fn(),
   };
 
   beforeAll(async () => {
@@ -41,6 +42,7 @@ describe('UserService', () => {
     mockRepository.save.mockReset();
     mockRepository.update.mockReset();
     mockRepository.delete.mockReset();
+    mockRepository.findOne.mockReset();
   });
 
   it('should be defined', () => {
