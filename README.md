@@ -11,7 +11,7 @@
    
 ## Description
 
-A CRUD ant authentication users with NestJs, GraphQL
+A CRUD and authentication users with NestJs, GraphQL
 
 # For Test
 
